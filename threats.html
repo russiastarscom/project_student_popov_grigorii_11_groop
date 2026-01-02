@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая безопасность - Угрозы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Цифровая Безопасность</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="mainNav">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html" class="active"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Цифровые угрозы</h1>
+            <p>Узнайте о самых распространенных киберугрозах и о том, как они работают</p>
+        </div>
+    </section>
+
+    <!-- Threats Tabs -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="phishing">Фишинг</button>
+                <button class="tab" data-tab="viruses">Вирусы и вредоносное ПО</button>
+                <button class="tab" data-tab="fraud">Мошенничество</button>
+                <button class="tab" data-tab="leaks">Утечки данных</button>
+            </div>
+            
+            <!-- Phishing Tab -->
+            <div id="phishing" class="tab-content active">
+                <div class="tab-header">
+                    <h2><i class="fas fa-fish"></i> Фишинг</h2>
+                    <div class="threat-level threat-high">Высокий риск</div>
+                </div>
+                
+                <div class="threat-content">
+                    <div class="threat-description">
+                        <h3>Что это такое?</h3>
+                        <p><strong>Фишинг</strong> — это вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей: логинам, паролям, данным банковских карт, паспортным данным.</p>
+                        
+                        <h3>Как работает?</h3>
+                        <p>Злоумышленники присылают поддельные письма или сообщения, которые выглядят как официальные сообщения от банков, социальных сетей, интернет-магазинов или государственных органов. В сообщении содержится ссылка на поддельный сайт, который выглядит как настоящий, где пользователя просят ввести свои конфиденциальные данные.</p>
+                        
+                        <div class="example-box warning">
+                            <h4><i class="fas fa-exclamation-circle"></i> Пример фишингового письма:</h4>
+                            <p>"Уважаемый клиент! В вашем аккаунте обнаружена подозрительная активность. Для защиты вашего счета перейдите по ссылке и подтвердите свои данные."</p>
+                            <p>Ссылка ведет на поддельный сайт, который выглядит как сайт банка.</p>
+                        </div>
+                        
+                        <h3>Как защититься?</h3>
+                        <ul>
+                            <li>Никогда не переходите по ссылкам в подозрительных письмах</li>
+                            <li>Всегда проверяйте адрес сайта в адресной строке браузера</li>
+                            <li>Не вводите конфиденциальные данные на сайтах, открытых по ссылкам из писем</li>
+                            <li>Используйте двухфакторную аутентификацию</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="threat-visual">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Фишинговое письмо</h4>
+                            </div>
+                            <div class="visual-content">
+                                <p>От: security@bank-support.com</p>
+                                <p>Тема: СРОЧНО! Подтвердите данные вашего аккаунта</p>
+                                <p class="fake-link">https://bank-clone.ru/confirm-account</p>
+                                <div class="warning-label">
+                                    <i class="fas fa-exclamation-triangle"></i> ОПАСНО: поддельный сайт!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Viruses Tab -->
+            <div id="viruses" class="tab-content">
+                <div class="tab-header">
+                    <h2><i class="fas fa-virus"></i> Вирусы и вредоносное ПО</h2>
+                    <div class="threat-level threat-high">Высокий риск</div>
+                </div>
+                
+                <div class="threat-content">
+                    <div class="threat-description">
+                        <h3>Что это такое?</h3>
+                        <p><strong>Вредоносное программное обеспечение (malware)</strong> — это любое программное обеспечение, созданное для нанесения ущерба компьютеру, серверу, клиенту или компьютерной сети.</p>
+                        
+                        <h3>Основные типы:</h3>
+                        
+                        <div class="malware-types">
+                            <div class="malware-type">
+                                <h4><i class="fas fa-biohazard"></i> Вирусы</h4>
+                                <p>Программы, которые прикрепляются к чистым файлам и распространяются по компьютеру.</p>
+                            </div>
+                            
+                            <div class="malware-type">
+                                <h4><i class="fas fa-lock"></i> Трояны</h4>
+                                <p>Вредоносные программы, замаскированные под легальное программное обеспечение.</p>
+                            </div>
+                            
+                            <div class="malware-type">
+                                <h4><i class="fas fa-dollar-sign"></i> Шпионское ПО</h4>
+                                <p>Программы, которые собирают информацию о пользователе без его ведома.</p>
+                            </div>
+                            
+                            <div class="malware-type">
+                                <h4><i class="fas fa-file-archive"></i> Рекламное ПО</h4>
+                                <p>Программы, которые автоматически показывают рекламу для получения прибыли.</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Как защититься?</h3>
+                        <ul>
+                            <li>Устанавливайте антивирусное ПО и регулярно его обновляйте</li>
+                            <li>Не скачивайте программы с непроверенных сайтов</li>
+                            <li>Не открывайте подозрительные вложения в письмах</li>
+                            <li>Регулярно обновляйте операционную систему и приложения</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="threat-visual">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Защита от вредоносного ПО</h4>
+                            </div>
+                            <div class="visual-content">
+                                <div class="protection-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Установите антивирус</span>
+                                </div>
+                                <div class="protection-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Обновляйте ПО регулярно</span>
+                                </div>
+                                <div class="protection-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Не открывайте подозрительные файлы</span>
+                                </div>
+                                <div class="protection-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Используйте брандмауэр</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fraud Tab -->
+            <div id="fraud" class="tab-content">
+                <div class="tab-header">
+                    <h2><i class="fas fa-user-secret"></i> Онлайн-мошенничество</h2>
+                    <div class="threat-level threat-medium">Средний риск</div>
+                </div>
+                
+                <div class="threat-content">
+                    <div class="threat-description">
+                        <h3>Что это такое?</h3>
+                        <p><strong>Онлайн-мошенничество</strong> — это преступная деятельность в интернете, направленная на обман пользователей с целью получения финансовой выгоды.</p>
+                        
+                        <h3>Распространенные схемы:</h3>
+                        
+                        <div class="fraud-types">
+                            <div class="fraud-card">
+                                <h4><i class="fas fa-gift"></i> "Бесплатные" призы</h4>
+                                <p>Мошенники сообщают, что вы выиграли приз, но для его получения нужно оплатить "комиссию" или "налоги".</p>
+                            </div>
+                            
+                            <div class="fraud-card">
+                                <h4><i class="fas fa-heart"></i> Романтические аферы</h4>
+                                <p>Создание фальшивых профилей в соцсетях для установления отношений с целью вымогательства денег.</p>
+                            </div>
+                            
+                            <div class="fraud-card">
+                                <h4><i class="fas fa-shopping-cart"></i> Поддельные интернет-магазины</h4>
+                                <p>Создание сайтов, имитирующих реальные магазины, для сбора платежей без отправки товара.</p>
+                            </div>
+                            
+                            <div class="fraud-card">
+                                <h4><i class="fas fa-phone"></i> Телефонное мошенничество</h4>
+                                <p>Звонки от "службы безопасности банка" с просьбой сообщить данные карты или коды из SMS.</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Как защититься?</h3>
+                        <ul>
+                            <li>Никогда не сообщайте данные карт, пароли и коды из SMS по телефону</li>
+                            <li>Проверяйте отзывы о магазинах перед покупкой</li>
+                            <li>Не верьте в "легкие деньги" и бесплатные призы</li>
+                            <li>Будьте осторожны при общении с незнакомцами в интернете</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="threat-visual">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h4>Признаки мошенничества</h4>
+                            </div>
+                            <div class="visual-content">
+                                <p>• Слишком хорошее предложение</p>
+                                <p>• Требование срочных действий</p>
+                                <p>• Просьба оплатить "комиссию" за выигрыш</p>
+                                <p>• Требование конфиденциальных данных</p>
+                                <p>• Орфографические ошибки в письмах</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Leaks Tab -->
+            <div id="leaks" class="tab-content">
+                <div class="tab-header">
+                    <h2><i class="fas fa-database"></i> Утечки данных</h2>
+                    <div class="threat-level threat-medium">Средний риск</div>
+                </div>
+                
+                <div class="threat-content">
+                    <div class="threat-description">
+                        <h3>Что это такое?</h3>
+                        <p><strong>Утечка данных</strong> — это несанкционированная передача информации из корпоративной или личной среды вовне.</p>
+                        
+                        <h3>Причины утечек:</h3>
+                        <ul>
+                            <li><strong>Взломы систем</strong> — кибератаки на базы данных компаний</li>
+                            <li><strong>Ошибки сотрудников</strong> — случайная отправка конфиденциальной информации</li>
+                            <li><strong>Вредоносное ПО</strong> — программы, крадущие данные</li>
+                            <li><strong>Физическая кража</strong> — украдение устройств с данными</li>
+                        </ul>
+                        
+                        <h3>Последствия утечек:</h3>
+                        <div class="consequences">
+                            <div class="consequence">
+                                <i class="fas fa-user-times"></i>
+                                <h4>Кража личных данных</h4>
+                                <p>Мошенники могут использовать ваши данные для получения кредитов или совершения преступлений от вашего имени.</p>
+                            </div>
+                            
+                            <div class="consequence">
+                                <i class="fas fa-credit-card"></i>
+                                <h4>Финансовые потери</h4>
+                                <p>Доступ к данным банковских карт может привести к несанкционированным списаниям.</p>
+                            </div>
+                            
+                            <div class="consequence">
+                                <i class="fas fa-comment-slash"></i>
+                                <h4>Шантаж и вымогательство</h4>
+                                <p>Конфиденциальная информация может использоваться для шантажа.</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Как защититься?</h3>
+                        <ul>
+                            <li>Используйте разные пароли для разных сервисов</li>
+                            <li>Включите двухфакторную аутентификацию везде, где это возможно</li>
+                            <li>Регулярно проверяйте, не были ли ваши данные скомпрометированы (например, через сервис Have I Been Pwned)</li>
+                            <li>Ограничивайте объем личной информации, которую вы размещаете в интернете</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="threat-visual">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <i class="fas fa-shield-check"></i>
+                                <h4>Проверка утечек</h4>
+                            </div>
+                            <div class="visual-content">
+                                <p>Узнайте, не были ли ваши данные скомпрометированы:</p>
+                                <div class="check-leak">
+                                    <input type="email" id="emailCheck" placeholder="Введите ваш email">
+                                    <button class="btn-small" id="checkLeakBtn">Проверить</button>
+                                </div>
+                                <div class="leak-result" id="leakResult">
+                                    <!-- Результат проверки появится здесь -->
+                                </div>
+                                <p class="note"><small>Проверка является демонстрационной и не отправляет данные на сервер</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Цифровая безопасность</h3>
+                    <p>Образовательный ресурс для повышения осведомленности о кибербезопасности. Сайт создан в учебных целях.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Разделы сайта</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> https://mpt-reg55.ru</li>
+                        <li><i class="fas fa-phone"></i> +7 (904) 587 7802 </li>
+                        <li><i class="fas fa-map-marker-alt"></i> рп Москаленки, ул. Механизаторов, 1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Сайт по цифровой безопасности. Все материалы предоставлены в учебных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+        
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+        
+        // Leak check simulation
+        document.getElementById('checkLeakBtn').addEventListener('click', function() {
+            const email = document.getElementById('emailCheck').value;
+            const resultDiv = document.getElementById('leakResult');
+            
+            if (!email) {
+                resultDiv.innerHTML = '<p class="error">Пожалуйста, введите email</p>';
+                return;
+            }
+            
+            // Симуляция проверки (в реальном сайте здесь был бы запрос к API)
+            const leaks = ['facebook.com', 'linkedin.com', 'adobe.com'];
+            const randomLeak = leaks[Math.floor(Math.random() * leaks.length)];
+            
+            resultDiv.innerHTML = `
+                <div class="leak-info">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Обнаружена утечка</h4>
+                    <p>Ваш email был найден в утечке данных с <strong>${randomLeak}</strong></p>
+                    <p class="recommendation">Рекомендуется сменить пароль на этом сервисе и на всех сайтах, где используется аналогичный пароль.</p>
+                </div>
+            `;
+        });
+        
+        // Highlight current page in navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navItems = document.querySelectorAll('nav a');
+        
+        navItems.forEach(item => {
+            const itemHref = item.getAttribute('href');
+            if (itemHref === currentPage || (currentPage === '' && itemHref === 'index.html')) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

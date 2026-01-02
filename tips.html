@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая безопасность - Советы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Цифровая Безопасность</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="mainNav">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html" class="active"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Советы по защите</h1>
+            <p>Практические рекомендации для повышения вашей цифровой безопасности</p>
+        </div>
+    </section>
+
+    <!-- Tips Categories -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="passwords">
+                    <i class="fas fa-key"></i> Пароли
+                </button>
+                <button class="category-tab" data-category="2fa">
+                    <i class="fas fa-mobile-alt"></i> 2FA
+                </button>
+                <button class="category-tab" data-category="updates">
+                    <i class="fas fa-sync-alt"></i> Обновления
+                </button>
+                <button class="category-tab" data-category="browsing">
+                    <i class="fas fa-globe"></i> Безопасный интернет
+                </button>
+            </div>
+            
+            <!-- Passwords Category -->
+            <div id="passwords" class="category-content active">
+                <div class="category-header">
+                    <h2><i class="fas fa-key"></i> Безопасные пароли</h2>
+                    <p>Пароль — это первая линия защиты ваших аккаунтов. Узнайте, как создавать и хранить надежные пароли.</p>
+                </div>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-text-height"></i>
+                        </div>
+                        <h3>Длина пароля</h3>
+                        <p>Используйте пароли длиной не менее 12 символов. Чем длиннее пароль, тем сложнее его взломать.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <h3>Сложность</h3>
+                        <p>Используйте комбинацию заглавных и строчных букв, цифр и специальных символов.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-unlink"></i>
+                        </div>
+                        <h3>Уникальность</h3>
+                        <p>Не используйте один и тот же пароль для разных сервисов. При утечке одного пароля все аккаунты окажутся под угрозой.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Избегайте личной информации</h3>
+                        <p>Не используйте в паролях имена, даты рождения, номера телефонов или другую личную информацию.</p>
+                    </div>
+                </div>
+                
+                <div class="password-examples">
+                    <h3><i class="fas fa-check-circle"></i> Примеры хороших паролей:</h3>
+                    <div class="example-container">
+                        <div class="good-example">
+                            <h4>Хороший пароль:</h4>
+                            <code>B1rD@Fly!ng#2023</code>
+                            <p>Длина: 16 символов, содержит буквы, цифры, специальные символы</p>
+                        </div>
+                        
+                        <div class="bad-example">
+                            <h4>Плохой пароль:</h4>
+                            <code>password123</code>
+                            <p>Слишком простой, распространенный, легко подобрать</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="password-manager">
+                    <h3><i class="fas fa-lock"></i> Менеджеры паролей</h3>
+                    <p>Используйте менеджеры паролей (LastPass, Bitwarden, 1Password) для безопасного хранения и генерации сложных паролей.</p>
+                    <div class="manager-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Хранение паролей в зашифрованном виде</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Автозаполнение форм на сайтах</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Генерация случайных паролей</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Синхронизация между устройствами</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2FA Category -->
+            <div id="2fa" class="category-content">
+                <div class="category-header">
+                    <h2><i class="fas fa-mobile-alt"></i> Двухфакторная аутентификация (2FA)</h2>
+                    <p>Дополнительный уровень защиты, который значительно усложняет доступ к вашему аккаунту даже при компрометации пароля.</p>
+                </div>
+                
+                <div class="what-is-2fa">
+                    <div class="what-is-text">
+                        <h3>Что такое 2FA?</h3>
+                        <p><strong>Двухфакторная аутентификация</strong> — это метод защиты, при котором для доступа к аккаунту требуется не только пароль, но и дополнительный код, который отправляется на ваш телефон или генерируется специальным приложением.</p>
+                        <p>Даже если злоумышленник узнает ваш пароль, без второго фактора он не сможет войти в аккаунт.</p>
+                    </div>
+                    
+                    <div class="what-is-visual">
+                        <div class="auth-steps">
+                            <div class="auth-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Введите пароль</h4>
+                                    <p>Как при обычном входе</p>
+                                </div>
+                            </div>
+                            
+                            <div class="auth-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Введите код</h4>
+                                    <p>Код из приложения или SMS</p>
+                                </div>
+                            </div>
+                            
+                            <div class="auth-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Доступ получен</h4>
+                                    <p>Вы успешно вошли в аккаунт</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="methods-2fa">
+                    <h3>Методы двухфакторной аутентификации</h3>
+                    
+                    <div class="methods-grid">
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>SMS-коды</h4>
+                            <p>Код приходит в SMS-сообщении. Простой метод, но менее безопасный (риск перехвата SIM-карты).</p>
+                        </div>
+                        
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-mobile"></i>
+                            </div>
+                            <h4>Приложения-аутентификаторы</h4>
+                            <p>Google Authenticator, Microsoft Authenticator. Генерируют коды без доступа в интернет. Наиболее рекомендуемый метод.</p>
+                        </div>
+                        
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h4>Аппаратные ключи</h4>
+                            <p>YubiKey, Titan Security Key. Физические устройства для аутентификации. Самый безопасный метод.</p>
+                        </div>
+                        
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email-коды</h4>
+                            <p>Код приходит на email. Удобно, но менее безопасно, если email уже скомпрометирован.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="enable-2fa">
+                    <h3>Где включить 2FA?</h3>
+                    <p>Рекомендуется включить двухфакторную аутентификацию на следующих сервисах:</p>
+                    
+                    <div class="services-list">
+                        <div class="service">
+                            <i class="fab fa-google"></i>
+                            <div>
+                                <h4>Google (Gmail)</h4>
+                                <p>Настройки аккаунта → Безопасность → Двухэтапная аутентификация</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <h4>Apple ID</h4>
+                                <p>Настройки → [ваше имя] → Пароль и безопасность → Двухфакторная аутентификация</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service">
+                            <i class="fab fa-facebook"></i>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p>Настройки → Безопасность и вход → Двухфакторная аутентификация</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h4>Telegram</h4>
+                                <p>Настройки → Конфиденциальность и безопасность → Двухэтапная проверка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Updates Category -->
+            <div id="updates" class="category-content">
+                <div class="category-header">
+                    <h2><i class="fas fa-sync-alt"></i> Своевременные обновления</h2>
+                    <p>Регулярное обновление программного обеспечения — одна из самых простых и эффективных мер безопасности.</p>
+                </div>
+                
+                <div class="update-importance">
+                    <div class="importance-text">
+                        <h3>Почему обновления так важны?</h3>
+                        <p>Разработчики постоянно находят и исправляют уязвимости в своем программном обеспечении. Хакеры знают об этих уязвимостях и используют их для атак на пользователей, которые не установили обновления.</p>
+                        
+                        <div class="importance-points">
+                            <div class="point">
+                                <i class="fas fa-bug"></i>
+                                <h4>Исправление уязвимостей</h4>
+                                <p>Большинство обновлений содержат исправления обнаруженных уязвимостей безопасности.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Улучшение защиты</h4>
+                                <p>Новые версии программ часто содержать улучшенные механизмы безопасности.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Устранение ошибок</h4>
+                                <p>Обновления исправляют ошибки, которые могут использоваться злоумышленниками.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="importance-visual">
+                        <div class="update-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">День 1</div>
+                                <div class="timeline-content">
+                                    <h4>Обнаружена уязвимость</h4>
+                                    <p>Разработчики находят ошибку в коде</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">День 7</div>
+                                <div class="timeline-content">
+                                    <h4>Выпущено обновление</h4>
+                                    <p>Обновление с исправлением доступно для скачивания</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">День 10</div>
+                                <div class="timeline-content">
+                                    <h4>Хакеры атакуют</h4>
+                                    <p>Атаки на пользователей, которые не обновились</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">День 30</div>
+                                <div class="timeline-content">
+                                    <h4>Массовые взломы</h4>
+                                    <p>Тысячи аккаунтов скомпрометированы</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="what-to-update">
+                    <h3>Что нужно регулярно обновлять?</h3>
+                    
+                    <div class="update-list">
+                        <div class="update-item">
+                            <div class="update-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Операционная система</h4>
+                                <p>Windows, macOS, Linux, Android, iOS. Включите автоматические обновления.</p>
+                            </div>
+                            <div class="update-frequency">
+                                <span class="frequency high">Высокая важность</span>
+                            </div>
+                        </div>
+                        
+                        <div class="update-item">
+                            <div class="update-icon">
+                                <i class="fas fa-browser"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Браузеры</h4>
+                                <p>Chrome, Firefox, Edge, Safari. Браузеры часто содержат уязвимости.</p>
+                            </div>
+                            <div class="update-frequency">
+                                <span class="frequency high">Высокая важность</span>
+                            </div>
+                        </div>
+                        
+                        <div class="update-item">
+                            <div class="update-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Антивирусное ПО</h4>
+                                <p>Базы вирусных сигнатур обновляются ежедневно.</p>
+                            </div>
+                            <div class="update-frequency">
+                                <span class="frequency high">Ежедневно</span>
+                            </div>
+                        </div>
+                        
+                        <div class="update-item">
+                            <div class="update-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Приложения</h4>
+                                <p>Особенно важны обновления для офисных программ, медиаплееров, PDF-ридеров.</p>
+                            </div>
+                            <div class="update-frequency">
+                                <span class="frequency medium">Средняя важность</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="auto-update">
+                    <h3><i class="fas fa-robot"></i> Включите автоматические обновления</h3>
+                    <p>Настройте автоматические обновления для операционной системы и ключевых приложений. Это самый надежный способ всегда быть защищенным.</p>
+                    
+                    <div class="auto-update-steps">
+                        <div class="step">
+                            <h4>Windows</h4>
+                            <p>Параметры → Обновление и безопасность → Центр обновления Windows</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h4>macOS</h4>
+                            <p>Системные настройки → Обновление ПО → Автоматически держать macOS обновленным</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h4>Android</h4>
+                            <p>Настройки → Система → Дополнительно → Обновление системы → Автообновление</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h4>iOS</h4>
+                            <p>Настройки → Основные → Обновление ПО → Включить автоматические обновления</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Browsing Category -->
+            <div id="browsing" class="category-content">
+                <div class="category-header">
+                    <h2><i class="fas fa-globe"></i> Безопасный интернет</h2>
+                    <p>Правила безопасной работы в интернете для защиты от угроз и сохранения конфиденциальности.</p>
+                </div>
+                
+                <div class="safe-browsing-tips">
+                    <h3>Основные правила безопасного интернета</h3>
+                    
+                    <div class="browsing-tips-grid">
+                        <div class="browsing-tip">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h4>Проверяйте HTTPS</h4>
+                                <p>Убедитесь, что сайт использует защищенное соединение (https:// и значок замка в адресной строке).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="browsing-tip">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h4>Осторожнее с публичными Wi-Fi</h4>
+                                <p>Не вводите конфиденциальные данные в публичных сетях. Используйте VPN для защиты.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="browsing-tip">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h4>Скачивайте с официальных сайтов</h4>
+                                <p>Загружайте программы только с официальных сайтов разработчиков или проверенных магазинов.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="browsing-tip">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h4>Блокируйте рекламу и трекеры</h4>
+                                <p>Используйте блокировщики рекламы (uBlock Origin) и расширения для защиты конфиденциальности.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="browser-security">
+                    <h3>Настройки безопасности браузера</h3>
+                    
+                    <div class="browser-settings">
+                        <div class="setting">
+                            <h4><i class="fas fa-cookie"></i> Управление cookies</h4>
+                            <p>Настройте автоматическое удаление cookies при закрытии браузера или используйте режим инкогнито для чувствительных операций.</p>
+                        </div>
+                        
+                        <div class="setting">
+                            <h4><i class="fas fa-history"></i> Очистка истории</h4>
+                            <p>Регулярно очищайте историю просмотров, кэш и cookies.</p>
+                        </div>
+                        
+                        <div class="setting">
+                            <h4><i class="fas fa-shield-alt"></i> Безопасный просмотр</h4>
+                            <p>Включите функцию "Безопасный просмотр" в настройках браузера для защиты от опасных сайтов.</p>
+                        </div>
+                        
+                        <div class="setting">
+                            <h4><i class="fas fa-plug"></i> Расширения</h4>
+                            <p>Устанавливайте расширения только из официальных магазинов и регулярно проверяйте их список.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="privacy-tools">
+                    <h3>Инструменты для защиты конфиденциальности</h3>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>VPN</h4>
+                            <p>Сервисы вроде ProtonVPN, NordVPN шифруют интернет-трафик и скрывают ваше местоположение.</p>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Поисковые системы</h4>
+                            <p>Используйте DuckDuckGo или StartPage вместо Google для анонимного поиска.</p>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Почтовые сервисы</h4>
+                            <p>ProtonMail, Tutanota предлагают шифрование писем и защиту данных.</p>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Мессенджеры</h4>
+                            <p>Signal, Telegram (с включенным секретным чатом) обеспечивают сквозное шифрование сообщений.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Цифровая безопасность</h3>
+                    <p>Образовательный ресурс для повышения осведомленности о кибербезопасности. Сайт создан в учебных целях.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Разделы сайта</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> https://mpt-reg55.ru</li>
+                        <li><i class="fas fa-phone"></i> +7 (904) 587 7802 </li>
+                        <li><i class="fas fa-map-marker-alt"></i> рп Москаленки, ул. Механизаторов, 1</li
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Сайт по цифровой безопасности. Все материалы предоставлены в учебных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+        
+        // Category tabs functionality
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const categoryContents = document.querySelectorAll('.category-content');
+        
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetCategory = tab.getAttribute('data-category');
+                
+                // Remove active class from all tabs and contents
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                categoryContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(targetCategory).classList.add('active');
+            });
+        });
+        
+        // Highlight current page in navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navItems = document.querySelectorAll('nav a');
+        
+        navItems.forEach(item => {
+            const itemHref = item.getAttribute('href');
+            if (itemHref === currentPage || (currentPage === '' && itemHref === 'index.html')) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

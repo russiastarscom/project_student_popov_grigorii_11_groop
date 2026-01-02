@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая безопасность - Интерактив</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Цифровая Безопасность</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="mainNav">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html" class="active"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Интерактивные материалы</h1>
+            <p>Проверьте свои знания и получите полезные материалы для повышения цифровой безопасности</p>
+        </div>
+    </section>
+
+    <!-- Interactive Sections -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="interactive-tabs">
+                <button class="interactive-tab active" data-interactive="test">
+                    <i class="fas fa-question-circle"></i> Тест
+                </button>
+                <button class="interactive-tab" data-interactive="checklist">
+                    <i class="fas fa-clipboard-check"></i> Чек-лист
+                </button>
+                <button class="interactive-tab" data-interactive="password-checker">
+                    <i class="fas fa-key"></i> Проверка пароля
+                </button>
+                <button class="interactive-tab" data-interactive="phishing-simulator">
+                    <i class="fas fa-fish"></i> Симулятор фишинга
+                </button>
+            </div>
+            
+            <!-- Test Section -->
+            <div id="test" class="interactive-content active">
+                <div class="test-header">
+                    <h2><i class="fas fa-question-circle"></i> Тест "Проверь себя!"</h2>
+                    <p>Ответьте на вопросы, чтобы оценить свои знания о цифровой безопасности</p>
+                </div>
+                
+                <div class="test-container">
+                    <div class="test-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-text">Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">5</span></div>
+                    </div>
+                    
+                    <div class="test-questions">
+                        <!-- Question 1 -->
+                        <div class="question active" data-question="1">
+                            <h3>1. Что такое фишинг?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q1" value="a">
+                                    <span class="option-text">A) Вид спортивной рыбалки</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="b">
+                                    <span class="option-text">B) Мошенничество с целью получения конфиденциальной информации</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="c">
+                                    <span class="option-text">C) Вид компьютерного вируса, который шифрует файлы</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="d">
+                                    <span class="option-text">D) Метод ускорения интернет-соединения</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 2 -->
+                        <div class="question" data-question="2">
+                            <h3>2. Какой из этих паролей является наиболее надежным?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q2" value="a">
+                                    <span class="option-text">A) password123</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="b">
+                                    <span class="option-text">B) 12345678</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="c">
+                                    <span class="option-text">C) qwerty</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="d">
+                                    <span class="option-text">D) Xk8@qP#2mL9!</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 3 -->
+                        <div class="question" data-question="3">
+                            <h3>3. Что означает аббревиатура 2FA?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q3" value="a">
+                                    <span class="option-text">A) Двухфакторная аутентификация</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="b">
+                                    <span class="option-text">B) Два файла авторизации</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="c">
+                                    <span class="option-text">C) Второй фактор атаки</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="d">
+                                    <span class="option-text">D) Двойная защита аккаунта</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 4 -->
+                        <div class="question" data-question="4">
+                            <h3>4. Что нужно делать при получении письма от "банка" с просьбой перейти по ссылке и подтвердить данные?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q4" value="a">
+                                    <span class="option-text">A) Немедленно перейти по ссылке и ввести данные</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="b">
+                                    <span class="option-text">B) Переслать письмо друзьям, чтобы они тоже проверили свои аккаунты</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="c">
+                                    <span class="option-text">C) Не переходить по ссылке, а зайти на сайт банка напрямую через браузер</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="d">
+                                    <span class="option-text">D) Удалить письмо, не открывая</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 5 -->
+                        <div class="question" data-question="5">
+                            <h3>5. Почему важно регулярно обновлять программное обеспечение?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q5" value="a">
+                                    <span class="option-text">A) Обновления содержат исправления уязвимостей безопасности</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="b">
+                                    <span class="option-text">B) Новые версии программ работают быстрее</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="c">
+                                    <span class="option-text">C) Так программы занимают меньше места на диске</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="d">
+                                    <span class="option-text">D) Обновления делают интерфейс красивее</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="test-controls">
+                        <button class="btn btn-outline" id="prevQuestion" disabled>
+                            <i class="fas fa-arrow-left"></i> Назад
+                        </button>
+                        <button class="btn" id="nextQuestion">
+                            Далее <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-success" id="submitTest" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Завершить тест
+                        </button>
+                    </div>
+                    
+                    <div class="test-result" id="testResult">
+                        <!-- Результат теста появится здесь -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Checklist Section -->
+            <div id="checklist" class="interactive-content">
+                <div class="checklist-header">
+                    <h2><i class="fas fa-clipboard-check"></i> Чек-лист цифровой безопасности</h2>
+                    <p>Отметьте выполненные пункты и скачайте готовый чек-лист для дальнейшего использования</p>
+                </div>
+                
+                <div class="checklist-container">
+                    <div class="checklist-categories">
+                        <div class="checklist-category">
+                            <h3><i class="fas fa-key"></i> Пароли и аккаунты</h3>
+                            <div class="checklist-items">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1">Использую уникальные пароли для каждого важного аккаунта</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2">Мои пароли содержат не менее 12 символов (буквы, цифры, спецсимволы)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3">Использую менеджер паролей для хранения и генерации паролей</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4">Включил двухфакторную аутентификацию на всех важных аккаунтах</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="checklist-category">
+                            <h3><i class="fas fa-laptop"></i> Устройства и программы</h3>
+                            <div class="checklist-items">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item5">
+                                    <label for="item5">Установил антивирусное ПО и регулярно его обновляю</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item6">
+                                    <label for="item6">Включил автоматические обновления операционной системы</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item7">
+                                    <label for="item7">Регулярно обновляю браузер и все установленные приложения</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item8">
+                                    <label for="item8">Делаю резервные копии важных данных</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="checklist-category">
+                            <h3><i class="fas fa-globe"></i> Интернет и сети</h3>
+                            <div class="checklist-items">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item9">
+                                    <label for="item9">Проверяю наличие HTTPS и значка замка перед вводом личных данных</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item10">
+                                    <label for="item10">Не подключаюсь к банковским сервисам через публичный Wi-Fi</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item11">
+                                    <label for="item11">Использую блокировщик рекламы и расширения для защиты конфиденциальности</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item12">
+                                    <label for="item12">Регулярно очищаю историю браузера, кэш и cookies</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="checklist-category">
+                            <h3><i class="fas fa-user-shield"></i> Личные данные</h3>
+                            <div class="checklist-items">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item13">
+                                    <label for="item13">Ограничил объем личной информации в социальных сетях</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item14">
+                                    <label for="item14">Проверяю настройки конфиденциальности в социальных сетях</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item15">
+                                    <label for="item15">Не размещаю в интернете фотографии документов, билетов, чеков</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item16">
+                                    <label for="item16">Использую разные email-адреса для разных целей (работа, личное, регистрации)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-summary">
+                        <div class="summary-card">
+                            <h3>Ваш прогресс</h3>
+                            <div class="progress-circle">
+                                <div class="circle">
+                                    <span id="checklistPercentage">0</span>%
+                                </div>
+                            </div>
+                            <p>Выполнено <span id="completedItems">0</span> из <span id="totalItems">16</span> пунктов</p>
+                            <button class="btn" id="resetChecklist">
+                                <i class="fas fa-redo"></i> Сбросить
+                            </button>
+                        </div>
+                        
+                        <div class="download-card">
+                            <h3>Скачать чек-лист</h3>
+                            <p>Сохраните чек-лист на компьютер или распечатайте для дальнейшего использования</p>
+                            <a href="checklist.pdf" class="btn btn-download" download>
+                                <i class="fas fa-download"></i> Скачать PDF
+                            </a>
+                            <p class="note"><small>Файл checklist.pdf будет загружен на ваш компьютер</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Password Checker Section -->
+            <div id="password-checker" class="interactive-content">
+                <div class="password-checker-header">
+                    <h2><i class="fas fa-key"></i> Проверка надежности пароля</h2>
+                    <p>Узнайте, насколько надежен ваш пароль и как его улучшить</p>
+                </div>
+                
+                <div class="password-checker-container">
+                    <div class="password-input-section">
+                        <div class="input-group">
+                            <input type="password" id="passwordInput" placeholder="Введите пароль для проверки">
+                            <button class="btn-eye" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <button class="btn" id="checkPassword">
+                            <i class="fas fa-shield-alt"></i> Проверить пароль
+                        </button>
+                        <button class="btn btn-outline" id="generatePassword">
+                            <i class="fas fa-random"></i> Сгенерировать пароль
+                        </button>
+                    </div>
+                    
+                    <div class="password-strength">
+                        <h3>Надежность пароля</h3>
+                        <div class="strength-meter">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <div class="strength-label" id="strengthLabel">Введите пароль</div>
+                    </div>
+                    
+                    <div class="password-analysis">
+                        <h3>Анализ пароля</h3>
+                        <div class="analysis-results" id="analysisResults">
+                            <!-- Результаты анализа появятся здесь -->
+                        </div>
+                    </div>
+                    
+                    <div class="password-tips">
+                        <h3><i class="fas fa-lightbulb"></i> Как улучшить пароль?</h3>
+                        <div class="tips-list" id="passwordTips">
+                            <!-- Советы по улучшению пароля появятся здесь -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phishing Simulator Section -->
+            <div id="phishing-simulator" class="interactive-content">
+                <div class="phishing-simulator-header">
+                    <h2><i class="fas fa-fish"></i> Симулятор фишинговых атак</h2>
+                    <p>Проверьте, сможете ли вы отличить настоящее письмо от фишингового</p>
+                </div>
+                
+                <div class="phishing-simulator-container">
+                    <div class="simulator-instructions">
+                        <p>Вам будут показаны примеры писем. Определите, какие из них являются фишинговыми, а какие — настоящими.</p>
+                        <div class="score-board">
+                            <div class="score-item">
+                                <span class="score-label">Правильно:</span>
+                                <span class="score-value" id="correctAnswers">0</span>
+                            </div>
+                            <div class="score-item">
+                                <span class="score-label">Неправильно:</span>
+                                <span class="score-value" id="wrongAnswers">0</span>
+                            </div>
+                            <div class="score-item">
+                                <span class="score-label">Всего писем:</span>
+                                <span class="score-value" id="totalEmails">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="email-simulator">
+                        <div class="email-header">
+                            <div class="email-sender" id="emailSender">security@bank-support.com</div>
+                            <div class="email-subject" id="emailSubject">СРОЧНО! Подтвердите данные вашего аккаунта</div>
+                        </div>
+                        
+                        <div class="email-body" id="emailBody">
+                            <!-- Текст письма появится здесь -->
+                        </div>
+                        
+                        <div class="email-actions">
+                            <button class="btn btn-phishing" id="markPhishing">
+                                <i class="fas fa-exclamation-triangle"></i> Фишинг
+                            </button>
+                            <button class="btn btn-legitimate" id="markLegitimate">
+                                <i class="fas fa-check-circle"></i> Настоящее
+                            </button>
+                            <button class="btn btn-outline" id="nextEmail">
+                                Следующее письмо <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="email-result" id="emailResult">
+                            <!-- Результат проверки появится здесь -->
+                        </div>
+                    </div>
+                    
+                    <div class="phishing-tips">
+                        <h3><i class="fas fa-clipboard-list"></i> Признаки фишингового письма</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Обращение "Уважаемый клиент" вместо вашего имени</li>
+                            <li><i class="fas fa-check"></i> Срочность и угрозы ("аккаунт будет заблокирован")</li>
+                            <li><i class="fas fa-check"></i> Ссылки, ведущие на подозрительные домены</li>
+                            <li><i class="fas fa-check"></i> Орфографические и грамматические ошибки</li>
+                            <li><i class="fas fa-check"></i> Запрос конфиденциальной информации по email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Цифровая безопасность</h3>
+                    <p>Образовательный ресурс для повышения осведомленности о кибербезопасности. Сайт создан в учебных целях.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Разделы сайта</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="threats.html"><i class="fas fa-exclamation-triangle"></i> Угрозы</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Советы</a></li>
+                        <li><a href="interactive.html"><i class="fas fa-gamepad"></i> Интерактив</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> https://mpt-reg55.ru</li>
+                        <li><i class="fas fa-phone"></i> +7 (904) 587 7802</li>
+                        <li><i class="fas fa-map-marker-alt"></i> рп Москаленки, ул. Механизаторов, 1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Сайт по цифровой безопасности. Все материалы предоставлены в учебных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+        
+        // Interactive tabs functionality
+        const interactiveTabs = document.querySelectorAll('.interactive-tab');
+        const interactiveContents = document.querySelectorAll('.interactive-content');
+        
+        interactiveTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetInteractive = tab.getAttribute('data-interactive');
+                
+                // Remove active class from all tabs and contents
+                interactiveTabs.forEach(t => t.classList.remove('active'));
+                interactiveContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(targetInteractive).classList.add('active');
+            });
+        });
+        
+        // TEST SECTION LOGIC
+        const questions = document.querySelectorAll('.question');
+        const prevBtn = document.getElementById('prevQuestion');
+        const nextBtn = document.getElementById('nextQuestion');
+        const submitBtn = document.getElementById('submitTest');
+        const progressFill = document.getElementById('progressFill');
+        const currentQuestionSpan = document.getElementById('currentQuestion');
+        const totalQuestionsSpan = document.getElementById('totalQuestions');
+        const testResult = document.getElementById('testResult');
+        
+        let currentQuestionIndex = 0;
+        const totalQuestions = questions.length;
+        const answers = {};
+        
+        totalQuestionsSpan.textContent = totalQuestions;
+        
+        // Initialize progress
+        updateProgress();
+        
+        // Next question button
+        nextBtn.addEventListener('click', () => {
+            if (currentQuestionIndex < totalQuestions - 1) {
+                // Save answer for current question
+                saveAnswer(currentQuestionIndex);
+                
+                // Hide current question
+                questions[currentQuestionIndex].classList.remove('active');
+                
+                // Show next question
+                currentQuestionIndex++;
+                questions[currentQuestionIndex].classList.add('active');
+                
+                // Update UI
+                updateProgress();
+                updateButtons();
+                
+                // Restore saved answer if exists
+                restoreAnswer(currentQuestionIndex);
+            }
+        });
+        
+        // Previous question button
+        prevBtn.addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                // Save answer for current question
+                saveAnswer(currentQuestionIndex);
+                
+                // Hide current question
+                questions[currentQuestionIndex].classList.remove('active');
+                
+                // Show previous question
+                currentQuestionIndex--;
+                questions[currentQuestionIndex].classList.add('active');
+                
+                // Update UI
+                updateProgress();
+                updateButtons();
+                
+                // Restore saved answer if exists
+                restoreAnswer(currentQuestionIndex);
+            }
+        });
+        
+        // Submit test button
+        submitBtn.addEventListener('click', () => {
+            // Save answer for current question
+            saveAnswer(currentQuestionIndex);
+            
+            // Calculate score
+            let score = 0;
+            const correctAnswers = {
+                1: 'b', // Фишинг
+                2: 'd', // Надежный пароль
+                3: 'a', // 2FA
+                4: 'c', // Проверка письма
+                5: 'a'  // Обновления ПО
+            };
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                if (answers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+            
+            // Display result
+            let resultHTML = `
+                <h3>Результат теста</h3>
+                <div class="result-score">
+                    <div class="score-circle">
+                        <span>${score}</span>/<span>${totalQuestions}</span>
+                    </div>
+                    <p>Вы ответили правильно на ${score} из ${totalQuestions} вопросов</p>
+                </div>
+            `;
+            
+            if (score === totalQuestions) {
+                resultHTML += `
+                    <div class="result-message success">
+                        <h4><i class="fas fa-trophy"></i> Отличный результат!</h4>
+                        <p>Вы отлично разбираетесь в основах цифровой безопасности! Продолжайте в том же духе и не забывайте применять знания на практике.</p>
+                    </div>
+                `;
+            } else if (score >= totalQuestions / 2) {
+                resultHTML += `
+                    <div class="result-message warning">
+                        <h4><i class="fas fa-check-circle"></i> Хороший результат!</h4>
+                        <p>Вы знаете основы цифровой безопасности, но есть области, которые стоит изучить подробнее. Рекомендуем ознакомиться с материалами на страницах "Угрозы" и "Советы".</p>
+                    </div>
+                `;
+            } else {
+                resultHTML += `
+                    <div class="result-message error">
+                        <h4><i class="fas fa-exclamation-circle"></i> Есть над чем поработать</h4>
+                        <p>Ваши знания о цифровой безопасности нуждаются в улучшении. Рекомендуем внимательно изучить все разделы нашего сайта.</p>
+                    </div>
+                `;
+            }
+            
+            testResult.innerHTML = resultHTML;
+            testResult.style.display = 'block';
+            testResult.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Helper functions for test
+        function updateProgress() {
+            const progress = ((currentQuestionIndex + 1) / totalQuestions) * 100;
+            progressFill.style.width = `${progress}%`;
+            currentQuestionSpan.textContent = currentQuestionIndex + 1;
+        }
+        
+        function updateButtons() {
+            prevBtn.disabled = currentQuestionIndex === 0;
+            
+            if (currentQuestionIndex === totalQuestions - 1) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'inline-block';
+            } else {
+                nextBtn.style.display = 'inline-block';
+                submitBtn.style.display = 'none';
+            }
+        }
+        
+        function saveAnswer(questionIndex) {
+            const questionNumber = questionIndex + 1;
+            const selectedOption = document.querySelector(`input[name="q${questionNumber}"]:checked`);
+            
+            if (selectedOption) {
+                answers[questionNumber] = selectedOption.value;
+            }
+        }
+        
+        function restoreAnswer(questionIndex) {
+            const questionNumber = questionIndex + 1;
+            const savedAnswer = answers[questionNumber];
+            
+            if (savedAnswer) {
+                const option = document.querySelector(`input[name="q${questionNumber}"][value="${savedAnswer}"]`);
+                if (option) {
+                    option.checked = true;
+                }
+            }
+        }
+        
+        // CHECKLIST SECTION LOGIC
+        const checklistItems = document.querySelectorAll('.checklist-item input');
+        const completedItemsSpan = document.getElementById('completedItems');
+        const checklistPercentageSpan = document.getElementById('checklistPercentage');
+        const resetChecklistBtn = document.getElementById('resetChecklist');
+        const totalItems = checklistItems.length;
+        
+        document.getElementById('totalItems').textContent = totalItems;
+        
+        // Update checklist when items are checked/unchecked
+        checklistItems.forEach(item => {
+            item.addEventListener('change', updateChecklistProgress);
+        });
+        
+        // Reset checklist
+        resetChecklistBtn.addEventListener('click', () => {
+            checklistItems.forEach(item => {
+                item.checked = false;
+            });
+            updateChecklistProgress();
+        });
+        
+        function updateChecklistProgress() {
+            let completed = 0;
+            
+            checklistItems.forEach(item => {
+                if (item.checked) {
+                    completed++;
+                }
+            });
+            
+            const percentage = Math.round((completed / totalItems) * 100);
+            
+            completedItemsSpan.textContent = completed;
+            checklistPercentageSpan.textContent = percentage;
+            
+            // Update progress circle (simple version)
+            const circle = document.querySelector('.progress-circle .circle');
+            circle.style.background = `conic-gradient(#4dabf7 ${percentage}%, #e9ecef ${percentage}% 100%)`;
+        }
+        
+        // Initialize checklist progress
+        updateChecklistProgress();
+        
+        // PASSWORD CHECKER SECTION LOGIC
+        const passwordInput = document.getElementById('passwordInput');
+        const togglePasswordBtn = document.getElementById('togglePassword');
+        const checkPasswordBtn = document.getElementById('checkPassword');
+        const generatePasswordBtn = document.getElementById('generatePassword');
+        const strengthBar = document.getElementById('strengthBar');
+        const strengthLabel = document.getElementById('strengthLabel');
+        const analysisResults = document.getElementById('analysisResults');
+        const passwordTips = document.getElementById('passwordTips');
+        
+        // Toggle password visibility
+        togglePasswordBtn.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePasswordBtn.innerHTML = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+        });
+        
+        // Check password strength
+        checkPasswordBtn.addEventListener('click', checkPasswordStrength);
+        passwordInput.addEventListener('input', checkPasswordStrength);
+        
+        // Generate random password
+        generatePasswordBtn.addEventListener('click', () => {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            let password = '';
+            
+            // Ensure password has at least one of each required character type
+            password += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.charAt(Math.floor(Math.random() * 26));
+            password += 'abcdefghijklmnopqrstuvwxyz'.charAt(Math.floor(Math.random() * 26));
+            password += '0123456789'.charAt(Math.floor(Math.random() * 10));
+            password += '!@#$%^&*()_+'.charAt(Math.floor(Math.random() * 12));
+            
+            // Add remaining random characters
+            for (let i = 4; i < 16; i++) {
+                password += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            
+            // Shuffle the password
+            password = password.split('').sort(() => Math.random() - 0.5).join('');
+            
+            passwordInput.value = password;
+            passwordInput.setAttribute('type', 'text');
+            togglePasswordBtn.innerHTML = '<i class="fas fa-eye-slash"></i>';
+            
+            checkPasswordStrength();
+        });
+        
+        function checkPasswordStrength() {
+            const password = passwordInput.value;
+            let strength = 0;
+            let analysis = [];
+            let tips = [];
+            
+            // Length check
+            if (password.length >= 12) {
+                strength += 25;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Длина пароля: отлично (12+ символов)</div>');
+            } else if (password.length >= 8) {
+                strength += 15;
+                analysis.push('<div class="analysis-item medium"><i class="fas fa-exclamation-circle"></i> Длина пароля: нормально (8-11 символов)</div>');
+                tips.push('Увеличьте длину пароля до 12+ символов');
+            } else {
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Длина пароля: слабая (менее 8 символов)</div>');
+                tips.push('Пароль должен содержать не менее 8 символов, лучше 12+');
+            }
+            
+            // Lowercase check
+            if (/[a-z]/.test(password)) {
+                strength += 10;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Содержит строчные буквы</div>');
+            } else {
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Нет строчных букв</div>');
+                tips.push('Добавьте строчные буквы (a-z)');
+            }
+            
+            // Uppercase check
+            if (/[A-Z]/.test(password)) {
+                strength += 10;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Содержит заглавные буквы</div>');
+            } else {
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Нет заглавных букв</div>');
+                tips.push('Добавьте заглавные буквы (A-Z)');
+            }
+            
+            // Numbers check
+            if (/[0-9]/.test(password)) {
+                strength += 15;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Содержит цифры</div>');
+            } else {
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Нет цифр</div>');
+                tips.push('Добавьте цифры (0-9)');
+            }
+            
+            // Special characters check
+            if (/[^A-Za-z0-9]/.test(password)) {
+                strength += 20;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Содержит специальные символы</div>');
+            } else {
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Нет специальных символов</div>');
+                tips.push('Добавьте специальные символы (!@#$%^&* и т.д.)');
+            }
+            
+            // Common passwords check
+            const commonPasswords = ['password', '123456', 'qwerty', 'admin', 'welcome'];
+            let isCommon = false;
+            
+            for (const common of commonPasswords) {
+                if (password.toLowerCase().includes(common)) {
+                    isCommon = true;
+                    break;
+                }
+            }
+            
+            if (isCommon) {
+                strength = Math.max(0, strength - 30);
+                analysis.push('<div class="analysis-item bad"><i class="fas fa-times-circle"></i> Содержит распространенные слова/комбинации</div>');
+                tips.push('Избегайте распространенных слов и комбинаций (password, 123456 и т.д.)');
+            } else {
+                strength += 20;
+                analysis.push('<div class="analysis-item good"><i class="fas fa-check-circle"></i> Не содержит распространенных слов</div>');
+            }
+            
+            // Update strength bar and label
+            strength = Math.min(100, Math.max(0, strength));
+            strengthBar.style.width = `${strength}%`;
+            
+            if (password.length === 0) {
+                strengthLabel.textContent = 'Введите пароль';
+                strengthBar.style.backgroundColor = '#e9ecef';
+            } else if (strength < 40) {
+                strengthLabel.textContent = 'Очень слабый';
+                strengthBar.style.backgroundColor = '#ff6b6b';
+            } else if (strength < 60) {
+                strengthLabel.textContent = 'Слабый';
+                strengthBar.style.backgroundColor = '#ff922b';
+            } else if (strength < 80) {
+                strengthLabel.textContent = 'Средний';
+                strengthBar.style.backgroundColor = '#fcc419';
+            } else if (strength < 95) {
+                strengthLabel.textContent = 'Сильный';
+                strengthBar.style.backgroundColor = '#51cf66';
+            } else {
+                strengthLabel.textContent = 'Очень сильный';
+                strengthBar.style.backgroundColor = '#37b24d';
+            }
+            
+            // Update analysis results
+            analysisResults.innerHTML = analysis.join('');
+            
+            // Update tips
+            if (tips.length === 0) {
+                passwordTips.innerHTML = '<div class="tip-item"><i class="fas fa-check-circle"></i> Ваш пароль отличный! Не забывайте использовать разные пароли для разных сервисов.</div>';
+            } else {
+                let tipsHTML = '<h4>Рекомендации по улучшению:</h4>';
+                tips.forEach(tip => {
+                    tipsHTML += `<div class="tip-item"><i class="fas fa-lightbulb"></i> ${tip}</div>`;
+                });
+                passwordTips.innerHTML = tipsHTML;
+            }
+        }
+        
+        // PHISHING SIMULATOR LOGIC
+        const markPhishingBtn = document.getElementById('markPhishing');
+        const markLegitimateBtn = document.getElementById('markLegitimate');
+        const nextEmailBtn = document.getElementById('nextEmail');
+        const correctAnswersSpan = document.getElementById('correctAnswers');
+        const wrongAnswersSpan = document.getElementById('wrongAnswers');
+        const totalEmailsSpan = document.getElementById('totalEmails');
+        const emailResult = document.getElementById('emailResult');
+        
+        const emails = [
+            {
+                sender: "security@bank-support.com",
+                subject: "СРОЧНО! Подтвердите данные вашего аккаунта",
+                body: `
+                    <p>Уважаемый клиент!</p>
+                    <p>В вашем аккаунте обнаружена подозрительная активность. Для защиты ваших средств необходимо немедленно подтвердить данные.</p>
+                    <p>Перейдите по ссылке: <a href="#" class="fake-link">https://bank-clone.ru/confirm-account</a></p>
+                    <p>Если вы не подтвердите данные в течение 24 часов, ваш аккаунт будет заблокирован.</p>
+                    <p>С уважением,<br>Служба безопасности банка</p>
+                `,
+                isPhishing: true,
+                clues: [
+                    "Обращение 'Уважаемый клиент' вместо имени",
+                    "Ссылка ведет на подозрительный домен bank-clone.ru",
+                    "Создается искусственная срочность",
+                    "Угроза блокировки аккаунта"
+                ]
+            },
+            {
+                sender: "noreply@google.com",
+                subject: "Новый вход в ваш аккаунт Google",
+                body: `
+                    <p>Здравствуйте!</p>
+                    <p>В ваш аккаунт Google был выполнен вход с нового устройства.</p>
+                    <p><strong>Устройство:</strong> Chrome, Windows 10<br>
+                    <strong>Местоположение:</strong> Москва, Россия<br>
+                    <strong>Время:</strong> Сегодня, 14:30</p>
+                    <p>Если это были вы, можете проигнорировать это сообщение.</p>
+                    <p>Если это были не вы, немедленно <a href="#" class="real-link">измените пароль</a>.</p>
+                    <p>Вы также можете просмотреть активность вашего аккаунта на странице <a href="#" class="real-link">Активность в аккаунте</a>.</p>
+                `,
+                isPhishing: false,
+                clues: [
+                    "Содержит конкретные детали (устройство, местоположение, время)",
+                    "Не требует немедленных действий",
+                    "Предлагает проверить активность в аккаунте",
+                    "Ссылки ведут на настоящие домены Google"
+                ]
+            },
+            {
+                sender: "support@netflix-update.com",
+                subject: "Обновление информации о платеже",
+                body: `
+                    <p>Уважаемый абонент Netflix,</p>
+                    <p>Мы не смогли обработать ваш последний платеж. Чтобы избежать прерывания обслуживания, обновите информацию о способе оплаты.</p>
+                    <p>Перейдите в <a href="#" class="fake-link">Центр управления аккаунтом</a> для обновления данных.</p>
+                    <p>Если у вас есть вопросы, обратитесь в нашу службу поддержки.</p>
+                    <p>Спасибо,<br>Команда Netflix</p>
+                `,
+                isPhishing: true,
+                clues: [
+                    "Домен отправителя netflix-update.com вместо netflix.com",
+                    "Создается ощущение срочности",
+                    "Требуется обновить платежную информацию",
+                    "Обращение 'Уважаемый абонент' без имени"
+                ]
+            },
+            {
+                sender: "no-reply@account.apple.com",
+                subject: "Проверьте недавнюю активность iCloud",
+                body: `
+                    <p>Здравствуйте,</p>
+                    <p>Мы обнаружили вход в ваш аккаунт iCloud с нового браузера.</p>
+                    <p><strong>Дата и время:</strong> 15 ноября, 10:15 GMT<br>
+                    <strong>Браузер:</strong> Safari<br>
+                    <strong>Местоположение:</strong> Санкт-Петербург, RU</p>
+                    <p>Если это были вы, никаких действий не требуется.</p>
+                    <p>Если вы не узнаете эту активность, перейдите в настройки безопасности вашего аккаунта Apple ID.</p>
+                    <p>Это письмо отправлено автоматически. Пожалуйста, не отвечайте на него.</p>
+                `,
+                isPhishing: false,
+                clues: [
+                    "Домен отправителя account.apple.com (официальный)",
+                    "Содержит конкретные детали входа",
+                    "Не требует немедленных действий",
+                    "Указано, что письмо отправлено автоматически"
+                ]
+            }
+        ];
+        
+        let currentEmailIndex = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+        
+        // Load first email
+        loadEmail(currentEmailIndex);
+        
+        // Mark as phishing
+        markPhishingBtn.addEventListener('click', () => {
+            checkAnswer(true);
+        });
+        
+        // Mark as legitimate
+        markLegitimateBtn.addEventListener('click', () => {
+            checkAnswer(false);
+        });
+        
+        // Next email
+        nextEmailBtn.addEventListener('click', () => {
+            currentEmailIndex = (currentEmailIndex + 1) % emails.length;
+            loadEmail(currentEmailIndex);
+            emailResult.style.display = 'none';
+            markPhishingBtn.disabled = false;
+            markLegitimateBtn.disabled = false;
+        });
+        
+        function loadEmail(index) {
+            const email = emails[index];
+            
+            document.getElementById('emailSender').textContent = email.sender;
+            document.getElementById('emailSubject').textContent = email.subject;
+            document.getElementById('emailBody').innerHTML = email.body;
+            
+            totalEmailsSpan.textContent = emails.length;
+        }
+        
+        function checkAnswer(userSaidPhishing) {
+            const email = emails[currentEmailIndex];
+            const isCorrect = (userSaidPhishing && email.isPhishing) || (!userSaidPhishing && !email.isPhishing);
+            
+            // Update scores
+            if (isCorrect) {
+                correctCount++;
+                correctAnswersSpan.textContent = correctCount;
+            } else {
+                wrongCount++;
+                wrongAnswersSpan.textContent = wrongCount;
+            }
+            
+            // Show result
+            let resultHTML = '';
+            
+            if (isCorrect) {
+                resultHTML += `
+                    <div class="result-correct">
+                        <h4><i class="fas fa-check-circle"></i> Правильно!</h4>
+                        <p>Это письмо действительно является ${email.isPhishing ? 'фишинговым' : 'настоящим'}.</p>
+                    </div>
+                `;
+            } else {
+                resultHTML += `
+                    <div class="result-incorrect">
+                        <h4><i class="fas fa-times-circle"></i> Неправильно!</h4>
+                        <p>Это письмо на самом деле ${email.isPhishing ? 'фишинговое' : 'настоящее'}.</p>
+                    </div>
+                `;
+            }
+            
+            // Add clues
+            resultHTML += `
+                <div class="email-clues">
+                    <h5>Признаки ${email.isPhishing ? 'фишингового' : 'настоящего'} письма:</h5>
+                    <ul>
+            `;
+            
+            email.clues.forEach(clue => {
+                resultHTML += `<li><i class="fas fa-chevron-right"></i> ${clue}</li>`;
+            });
+            
+            resultHTML += `
+                    </ul>
+                </div>
+            `;
+            
+            emailResult.innerHTML = resultHTML;
+            emailResult.style.display = 'block';
+            
+            // Disable answer buttons
+            markPhishingBtn.disabled = true;
+            markLegitimateBtn.disabled = true;
+            
+            // Scroll to result
+            emailResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        // Highlight current page in navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navItems = document.querySelectorAll('nav a');
+        
+        navItems.forEach(item => {
+            const itemHref = item.getAttribute('href');
+            if (itemHref === currentPage || (currentPage === '' && itemHref === 'index.html')) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+        
+        // Initialize password checker
+        checkPasswordStrength();
+    </script>
+</body>
+</html>
